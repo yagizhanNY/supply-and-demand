@@ -1,0 +1,7 @@
+{
+  "name": "Supply and Demand App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
