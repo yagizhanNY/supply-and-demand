@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Entry</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-datetime
+    displayFormat="DD.MM.YYYY"
+    [(ngModel)]="date"
+    locale="tr-TR"
+  ></ion-datetime>
+  <ion-item>
+    <ion-label>Supply</ion-label>
+    <ion-input [(ngModel)]="supply" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Demand</ion-label>
+    <ion-input [(ngModel)]="demand" type="number"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="addData()">Add Data</ion-button>
+</ion-content>

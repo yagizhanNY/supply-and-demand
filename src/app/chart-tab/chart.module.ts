@@ -1,11 +1,14 @@
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './tab1.page';
+import { ChartPage } from './chart.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { ChartPageRoutingModule } from './chart-routing.module';
+import { ChartsModule } from 'ng2-charts';
+import { LineChartCanvasModule } from '../line-chart-canvas/line-chart-canvas.module';
 
 @NgModule({
   imports: [
@@ -13,8 +16,9 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    ChartPageRoutingModule,
+    LineChartCanvasModule,
   ],
-  declarations: [Tab1Page]
+  declarations: [ChartPage],
 })
-export class Tab1PageModule {}
+export class ChartPageModule {}

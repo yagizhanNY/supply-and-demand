@@ -1,0 +1,22 @@
+<ion-content class="ion-margin">
+  <ion-grid class="ion-margin">
+    <ion-row class="header-row">
+      <ion-col>Date</ion-col>
+      <ion-col>Supply</ion-col>
+      <ion-col>Demand</ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let data of dataList; let i = index">
+      <ion-col>{{ data.date }}</ion-col>
+      <ion-col>{{ data.supply }}</ion-col>
+      <ion-col>{{ data.demand }}</ion-col>
+      <ion-col
+        ><ion-icon
+          size="small"
+          name="trash-outline"
+          (click)="deleteData(i)"
+        ></ion-icon
+      ></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
