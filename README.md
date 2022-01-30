@@ -34,3 +34,9 @@ ionic serve -l
 ```
 
 Tüm komutlar sağlıklı bir şekilde çalışması durumunda web browserda hem android hem de ios versiyonlarının çalıştığı bir arayüz açılacaktır.
+
+### Android APK oluşturmak için gerekli adımlar
+
+İlgili işlem için aşağıdaki videoda yapılan işlemler **Node.js kurulumuna kadar** takip edilmelidir.
+
+https://www.youtube.com/watch?v=CWOLZBu7ySk&ab_channel=CodeSwag
